@@ -1,6 +1,7 @@
 class Exam{
 	public static void main(String ...args)throws InterruptedException{
 		try{
+			
 			Thread.sleep(1000);
 			System.out.println("Inside Try 1");
 			Thread.sleep(2000);
