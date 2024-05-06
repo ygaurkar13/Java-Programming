@@ -9,11 +9,11 @@
                 // if (temp1.equals("2022") || temp1.equals("2023") || temp1.equals("2024")) {
                        if(num>=2000 && num<=2024){
                     temp1 = temp.substring(4, 7); // Fix substring length
-                    if (temp1.equals("BIT") || temp1.equals("BCS") || temp1.equals("BCE") || temp1.equals("BME")) {
-                        temp1 = temp.substring(7, 10); // Fix substring length
-                        int Roll_no=100*(temp1.charAt(2) -'0') + 10*(temp1.charAt(1) -'0' + 1*(temp1.charAt(0)-'0'); //character by character from substring checking for creating and saving in Roll number 
-                        if(Roll_no<=50){
-                        	count++;
+                    	if (temp1.equals("BIT") || temp1.equals("BCS") || temp1.equals("BCE") || temp1.equals("BME")) {
+                        	temp1 = temp.substring(7, 10); // Fix substring length
+                        	int Roll_no=100*(temp1.charAt(2) -'0') + 10*(temp1.charAt(1) -'0' + 1*(temp1.charAt(0)-'0'); //character by character from substring checking for creating and saving in Roll number 
+                        	if(Roll_no<=50){
+                        		count++;
                         }
                    
                 }

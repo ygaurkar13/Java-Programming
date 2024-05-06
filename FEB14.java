@@ -80,25 +80,25 @@ class PrimeNumbers{
 		int arr[]=b.arrayOfNumbers();
 		int n=1000000;
 		int starttime,endtime;
-		int[] Time1=new int[4];
-		int[] Time2=new int[4];
-		for(int i=0;i<4;i++)
+		int[] Time1=new int[5];
+		int[] Time2=new int[5];
+		for(int i=0;i<5;i++)
 		{
 			starttime=(int)System.nanoTime();
 			c=b.primeCountAndCompositeCount1(arr,n);
 			endtime=(int)System.nanoTime();
 			Time1[i]=endtime-starttime;
 		}
-		for(int i=0;i<4;i++)
+		for(int i=0;i<5;i++)
 		{
 			starttime=(int)System.nanoTime();
 			e=b.primeCountAndCompositeCount2(arr,n);
 			endtime=(int)System.nanoTime();
 			Time2[i]=endtime-starttime;
 		}
-		System.out.println("Approach 1st check  \t2nd test  \t3rd test  \t4th test");
-        	System.out.println("Aprr1\t" + Time1[0] + "\t" + Time1[1] + "\t" + Time1[2] + "\t" +Time1[3] );
-        	System.out.println("Aprr2\t" + Time2[0] + "\t" + Time2[1] + "\t" + Time2[2] + "\t" +Time2[3] );	
+		System.out.println("Approach 1st \t2nd test \t3rd test \t4th test");
+        	System.out.println("Aprr1\t" + Time1[0] + "\t" + Time1[1] + "\t" + Time1[2] + "\t" +Time1[3] +"\t" +Time1[4]);
+        	System.out.println("Aprr2\t" + Time2[0] + "\t" + Time2[1] + "\t" + Time2[2] + "\t" +Time2[3] +"\t" +Time2[4]);	
 	}
 	
 
